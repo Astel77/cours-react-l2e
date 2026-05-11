@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body {
+    background: black;
+    color: white;
+  }
+  
+  h1, h2 {
+    color: #facc15; /* jaune cinéma */
+  }
+  
+  button {
+    color: white;
+  }

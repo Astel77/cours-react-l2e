@@ -5,7 +5,7 @@ export default function About() {
         <h1 className="text-yellow-400 text-4xl font-bold mb-6">
           À propos
         </h1>
-  
+        //Travail de fatou
         <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
   
           <p className="mb-4 text-gray-300">

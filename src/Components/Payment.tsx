@@ -80,9 +80,9 @@ export default function Payment({ data }: any) {
 
       {/* 💳 logos */}
       <div className="flex gap-4 mb-4">
-        <img className="h-6" src="src/wave.png" />
-        <img className="h-6" src="src/orange money.png" />
-        <img className="h-6" src="src/carte.jpg" />
+        <img className="h-6" src="src/src/wave.png" />
+        <img className="h-6" src="src/src/orange money.png" />
+        <img className="h-6" src="src/src/carte.jpg" />
       </div>
 
       {/* 💰 total */}

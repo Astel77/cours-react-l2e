@@ -1,73 +1,69 @@
 # React + TypeScript + Tailwindcss
+# 🎬 Application de Gestion de Cinéma
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Description
 
-Currently, two official plugins are available:
+Cette application web permet aux utilisateurs de :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- consulter les films disponibles
+- voir les séances de cinéma
+- réserver des places
+- effectuer un paiement
+- télécharger un ticket PDF avec QR Code
+- créer un compte et se connecter
+- réinitialiser leur mot de passe
 
-## React Compiler
+Le projet a été développé avec React typescript et Tailwind CSS.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# 🚀 Fonctionnalités
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎥 Gestion des films
+- affichage des films
+- détails des films
+- séances disponibles
+- catégories des films
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎟️ Réservation
+- sélection des places
+- validation des réservations
+- sauvegarde des réservations
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 💳 Paiement
+- interface de paiement
+- génération automatique de ticket PDF
+- QR Code sécurisé
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔐 Authentification
+- inscription utilisateur
+- connexion utilisateur
+- mot de passe oublié
+- réinitialisation du mot de passe
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 🛠️ Technologies utilisées
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React
+- TypeScript
+- Tailwind CSS
+- React Router DOM
+- jsPDF
+- QRCode
+
+---
+
+# 📂 Structure du projet
+
+```bash
+src/
+│
+├── Components/
+├── Pages/
+├── Data/
+├── utils/
+├── App.tsx
+├── main.tsx
+
+    

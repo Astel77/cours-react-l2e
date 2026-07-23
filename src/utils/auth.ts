@@ -1,31 +1,15 @@
-export const registerUser = (user: any) => {
-  localStorage.setItem("user", JSON.stringify(user));
-};
+// Ce fichier conserve les mêmes noms d'export qu'à l'origine (getUser, logout, ...)
+// pour limiter les changements dans les composants existants, mais s'appuie
+// maintenant sur le vrai backend NestJS via authService (JWT).
+import { authService } from "../Data/auth.service";
+import type { User } from "../Data/types";
 
-export const getUser = () => {
-  const user = localStorage.getItem("user");
+export const getUser = (): User | null => authService.getCachedUser();
 
-  return user ? JSON.parse(user) : null;
-};
+export const isAdmin = (): boolean => authService.isAdmin();
 
-export const loginUser = (email: string, password: string) => {
-  const user = getUser();
+export const isAuthenticated = (): boolean => authService.isAuthenticated();
 
-  if (!user) return false;
+export const logout = () => authService.logout();
 
-  return user.email === email && user.password === password;
-};
-
-export const resetPassword = (newPassword: string) => {
-  const user = getUser();
-
-  if (!user) return;
-
-  user.password = newPassword;
-
-  localStorage.setItem("user", JSON.stringify(user));
-};
-
-export const logout = () => {
-  localStorage.removeItem("user");
-};
+export { authService };

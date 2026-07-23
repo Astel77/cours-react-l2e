@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🎬 Pathé Cinéma — Frontend (React + Vite + TypeScript)
 
 Application de réservation de billets de cinéma, connectée au backend NestJS
@@ -140,4 +140,4 @@ src/
 ├── main.tsx
 
     
->>>>>>> d8b553e9bc6e24a120ced9a5bc2d26da9b577b33
+
